@@ -8,10 +8,64 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.pedro.pethost.MainActivity">
+    tools:context="com.example.pedro.pethost.MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="Hello World!"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="10sp">
+
+        <TextView
+            android:text="Faça uma conta Dono caso queira buscar um lar!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:text="Faça uma conta Anfitrião caso tenha esse lar!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/caotelainicial"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conta Anfitrião"
+            android:background="@color/white"
+            android:id="@+id/buttonhost"
+            android:layout_margin="10sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conta Dono"
+            android:background="@color/white"
+            android:id="@+id/buttondono"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"/>
+
+    </LinearLayout>
+
+
 </LinearLayout>
