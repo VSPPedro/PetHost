@@ -24,7 +24,7 @@
             android:id="@+id/etNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite seu nome Completo" />
+            android:hint="Digite seu nome completo" />
 
         <EditText
             android:id="@+id/etEndereco"
@@ -44,7 +44,29 @@
             android:layout_height="wrap_content"
             android:hint="Avaliacao" />
 
-        <!--<EditText-->
+        <EditText
+            android:id="@+id/etValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor Cobrado"/>
+
+        <EditText
+            android:id="@+id/etRaças"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Raças permitidas"/>
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btCarregarFoto"
+            android:text="Teste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <!--<EditText-->
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content" />-->
 
@@ -65,13 +87,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
-        android:gravity="center">
-    <!--  LinearLayoutDaFoto -->
-    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="5"-->
+        <!--android:gravity="center">-->
+    <!--&lt;!&ndash;  LinearLayoutDaFoto &ndash;&gt;-->
+    <!--</LinearLayout>-->
 
     <!--<LinearLayout-->
         <!--android:layout_width="match_parent"-->
