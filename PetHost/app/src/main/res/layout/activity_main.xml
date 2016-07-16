@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -20,51 +21,76 @@
         android:paddingBottom="10sp">
 
         <TextView
-            android:text="Faça uma conta Dono caso queira buscar um lar!"
+            android:text="Bem vindo ao PetHost!"
+            android:paddingTop="30dp"
+            android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
 
-        <TextView
-            android:text="Faça uma conta Anfitrião caso tenha esse lar!"
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"/>
-
+            android:id="@+id/imageView"
+            android:src="@drawable/telainicialteste4"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"/>
     </LinearLayout>
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/caotelainicial"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
+        <TextView
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/etUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Conta Anfitrião"
-            android:background="@color/white"
-            android:id="@+id/buttonhost"
-            android:layout_margin="10sp"/>
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Conta Dono"
+            android:text="Login"
             android:background="@color/white"
-            android:id="@+id/buttondono"
-            android:layout_marginBottom="10sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"/>
+            android:id="@+id/buttonlogin"
+            android:layout_weight="4"
+            android:layout_marginRight="10dp"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro"
+            android:background="@color/white"
+            android:id="@+id/buttoncadastro"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"/>
     </LinearLayout>
 
 
