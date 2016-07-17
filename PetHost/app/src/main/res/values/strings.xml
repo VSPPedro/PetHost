@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Pet Host</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cadasto_dono_imageview_description">Cadastro Dono</string>
+    <string name="button_set_login">Criar conta</string>
 </resources>

@@ -1,110 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical" >
-<!-- outroLinear-->
+    android:padding="16dp"
+    tools:context="com.example.pedro.pethost.DonoActivity"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cadastro"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Faço a sua conta anfitrão!"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/opcoescadastro2"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-         <!--Nome, endereco (Pegar localizacao?), FotoCasa , Telefone , Avaliacao e/ou comentarios -->
-        <!--<TextView-->
-            <!--android:text="Nome:"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textSize="23sp"/>-->
-        <!-- -->
-        <EditText
-            android:id="@+id/etNome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Digite seu nome completo" />
 
         <EditText
-            android:id="@+id/etEndereco"
+            android:id="@+id/etUsuarioNomeAnfitrao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Endereco" />
+            android:hint="Nome" />
 
         <EditText
-            android:id="@+id/etTelefone"
+            android:id="@+id/etUsuarioEnderecoAnfitrao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço" />
+
+        <EditText
+            android:id="@+id/etUsuarioTelefoneAnfitrao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Telefone" />
 
         <EditText
-            android:id="@+id/etAvaliacao"
+            android:id="@+id/etUsuarioCadastroAnfitrao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Avaliacao" />
+            android:hint="Email" />
 
         <EditText
-            android:id="@+id/etValor"
+            android:id="@+id/etSenhaCadastroAnfitrao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Valor Cobrado"/>
+            android:hint="Senha" />
 
         <EditText
-            android:id="@+id/etRaças"
+            android:id="@+id/etSenhaConfirmaAnfitrao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Raças permitidas"/>
-
-        <ImageView
-            android:id="@+id/ivFoto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:hint="Confirmar senha" />
 
         <Button
-            android:id="@+id/btCarregarFoto"
-            android:text="Teste"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-            <!--<EditText-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content" />-->
-
-
-       <!--<EditText-->
-           <!--android:id="@+id/etNome"-->
-           <!--android:layout_width="match_parent"-->
-           <!--android:layout_height="match_parent" />-->
-        <!-- -->
-        <!--<EditText-->
-            <!--android:id="@+id/etQualquerCoisa"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent" />-->
-        <!--<ImageView-->
-            <!--android:id="@+id/imageView"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent" />-->
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:background="@color/white"/>
 
     </LinearLayout>
-
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="5"-->
-        <!--android:gravity="center">-->
-    <!--&lt;!&ndash;  LinearLayoutDaFoto &ndash;&gt;-->
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="3"-->
-        <!--android:gravity="center">-->
-
-        <!--<Button-->
-            <!--android:id="@+id/btApostar"-->
-            <!--android:text="Apostar!"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content" />-->
-    <!--</LinearLayout>-->
 </LinearLayout>
