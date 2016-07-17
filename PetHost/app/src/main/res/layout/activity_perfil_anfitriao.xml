@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.pedro.pethost.PerfilDono">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/nomeUsuarioPerfilAnfitriao"
+            android:text="Bem-vindo, usuário anfitrião!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageUsuarioPerfilAnfitriao"
+            android:maxWidth="348dp"
+            android:maxHeight="210dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/fotoperfil"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Editar foto"
+            android:textSize="10dp"
+            android:id="@+id/buttoneditarfoto"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Atualizar localização"
+            android:id="@+id/buttonatualizarlocalizacao"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="Buscar Anfitrião"
+            android:id="@+id/buttonbuscaranfitriao"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="Faço a sua conta anfitrão!"
+            android:text="Faço a sua conta dono!"
             android:textColor="@color/black"
             android:layout_gravity="center"
             android:paddingLeft="15dp"/>
@@ -35,7 +35,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/opcoescadastro2"
+            android:src="@drawable/cracha"
             android:layout_gravity="center"
             android:padding="10dp"/>
     </LinearLayout>
@@ -46,37 +46,25 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/etUsuarioNomeAnfitrao"
+            android:id="@+id/etUsuarioNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome" />
 
         <EditText
-            android:id="@+id/etUsuarioEnderecoAnfitrao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Endereço" />
-
-        <EditText
-            android:id="@+id/etUsuarioTelefoneAnfitrao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Telefone" />
-
-        <EditText
-            android:id="@+id/etUsuarioCadastroAnfitrao"
+            android:id="@+id/etUsuarioCadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email" />
 
         <EditText
-            android:id="@+id/etSenhaCadastroAnfitrao"
+            android:id="@+id/etSenhaCadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Senha" />
 
         <EditText
-            android:id="@+id/etSenhaConfirmaAnfitrao"
+            android:id="@+id/etSenhaConfirma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirmar senha" />

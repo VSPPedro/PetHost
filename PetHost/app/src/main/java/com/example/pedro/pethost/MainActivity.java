@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    private static final int CADASTRO = 1;
     private Button btCadastro;
     private Button btLogin;
 
@@ -20,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         this.btCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(MainActivity.this, CadastroActivity.class);
-                startActivity(it);
+                Intent it = new Intent("NOVO_CADASTRO");
+                startActivityForResult(it, CADASTRO);
             }
         });
 
         //Botão Login
         this.btLogin = (Button) findViewById(R.id.buttonlogin);
-        this.btCadastro.setOnClickListener(new View.OnClickListener() {
+        this.btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 
