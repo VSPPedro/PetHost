@@ -7,9 +7,8 @@ import com.firebase.client.Firebase;
  * @author Matheus Mayer <matheusmayerduarte@gmail.com>
  * @since 18/07/2016
  */
-public class FirebaseSingleton
+public final class FirebaseSingleton
 {
-//    private static FirebaseSingleton uniqueInstance;
     private static Firebase uniqueInstance;
     private FirebaseSingleton(){}
 
@@ -20,9 +19,10 @@ public class FirebaseSingleton
      */
     public static Firebase getInstance()
     {
-        if (uniqueInstance == null){
+        if (uniqueInstance == null) {
             uniqueInstance = new Firebase("https://hospet-17bf7.firebaseio.com/");
         }
+
         return uniqueInstance;
     }
 }
