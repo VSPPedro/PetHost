@@ -87,10 +87,12 @@ public class UserAnfitriao
         this.senha = senha;
     }
 
-    // Firebase ou object para passar como paramentro!?
+    /**
+     * Metodo que realiza o insert no firebase
+     * @author Matheus Mayer
+     */
     public void insert()
     {
-        //adicionar mais um child ali após o contaAnfitriao para buscar o getId.
         Firebase firebase = FirebaseSingleton.getInstance().child("ContaAnfitriao").child(String.valueOf("User"+getId()));
         firebase.setValue(this);
     }
