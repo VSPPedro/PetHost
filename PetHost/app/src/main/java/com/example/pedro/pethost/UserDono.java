@@ -4,22 +4,11 @@ import com.firebase.client.Firebase;
 
 public class UserDono
 {
-    private int id = 1;
     private String nome;
     private String email;
     private String senha;
 
     public UserDono(){}
-
-    public int getId()
-    {
-        return id;
-    }
-
-    public void setId(int id)
-    {
-        this.id = id;
-    }
 
     public String getNome()
     {
@@ -57,7 +46,7 @@ public class UserDono
      */
     public void insert()
     {
-        Firebase firebase = FirebaseSingleton.getInstance().child("ContaDono").child(String.valueOf("User"+getId()));
-        firebase.setValue(this);
+        Firebase firebase = FirebaseSingleton.getInstance().child("ContaDono");
+        firebase.push().setValue(this);
     }
 }
