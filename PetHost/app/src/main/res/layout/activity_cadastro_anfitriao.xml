@@ -64,7 +64,7 @@
             android:hint="Telefone" />
 
         <EditText
-            android:id="@+id/etUsuarioCadastroAnfitrao"
+            android:id="@+id/etEmailAnfitriao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email" />
@@ -82,6 +82,7 @@
             android:hint="Confirmar senha" />
 
         <Button
+            android:id="@+id/btCadastrarAnfitriao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cadastrar"
