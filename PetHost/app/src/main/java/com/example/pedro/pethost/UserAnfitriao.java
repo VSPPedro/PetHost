@@ -1,5 +1,7 @@
 package com.example.pedro.pethost;
 
+import android.util.Log;
+
 import com.firebase.client.Firebase;
 
 /**
@@ -17,7 +19,6 @@ public class UserAnfitriao
 
     public UserAnfitriao(String nome, String endereco, String telefone, String email, String senha)
     {
-        this.id = 1;
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
@@ -26,16 +27,6 @@ public class UserAnfitriao
     }
 
     public UserAnfitriao(){};
-
-    public int getId()
-    {
-        return id;
-    }
-
-    public void setId(int id)
-    {
-        this.id = id;
-    }
 
     public String getNome()
     {
@@ -93,8 +84,8 @@ public class UserAnfitriao
      */
     public void insert()
     {
-        Firebase firebase = FirebaseSingleton.getInstance().child("ContaAnfitriao").child(String.valueOf("User"+getId()));
-        firebase.setValue(this);
+        Firebase firebase = FirebaseSingleton.getInstance().child("ContaAnfitriao");
+        firebase.push().setValue(this);
     }
 
 //    private boolean isDadosValidos(Firebase.CompletionListener dados)
