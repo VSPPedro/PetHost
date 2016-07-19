@@ -31,12 +31,9 @@ public class DonoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_dono);
-        Log.i("BD","inicio");
         Firebase.setAndroidContext(this);
         this.firebase = FirebaseSingleton.getInstance();
-        Log.i("BD","passouFIreBase");
         this.iniciarComponentes();
-        Log.i("BD","PassouComponentes");
         this.cadastrar.setOnClickListener(new OnClick());
     }
     /**
