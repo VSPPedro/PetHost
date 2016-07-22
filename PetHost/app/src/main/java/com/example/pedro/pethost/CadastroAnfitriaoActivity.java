@@ -1,5 +1,6 @@
 package com.example.pedro.pethost;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -92,6 +93,8 @@ public class CadastroAnfitriaoActivity extends AppCompatActivity {
         {
             CadastroAnfitriaoActivity.this.setDadosUser();
             CadastroAnfitriaoActivity.this.salvarAnfitriao();
+            Intent it = new Intent("PERFIL_ANFITRIAO");
+            startActivityForResult(it, ANFITRIAO);
         }
     }
 }

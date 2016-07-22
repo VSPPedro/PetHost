@@ -1,5 +1,6 @@
 package com.example.pedro.pethost;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,7 @@ import com.firebase.client.Firebase;
 
 public class DonoActivity extends AppCompatActivity {
     private static final int DONO = 1;
+    private static final int LOGIN = 1;
     private Firebase firebase;
     private EditText nome;
     private EditText email;
@@ -84,6 +86,8 @@ public class DonoActivity extends AppCompatActivity {
         {
             DonoActivity.this.setDadosUser();
             DonoActivity.this.salvarDono();
+            Intent it = new Intent("NOVO_PERFIL_DONO");
+            startActivityForResult(it, LOGIN);
         }
     }
 }
