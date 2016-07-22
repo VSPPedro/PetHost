@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -36,15 +37,18 @@ public class PerfilDono extends AppCompatActivity {
                 startActivityForResult(it, FOTO);
             }
         });
-
+        Log.i("BD", "AntesDEChamar");
         //Botão buscar anfitrião
         this.bBuscarAnfitriao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent("NOVO_BUSCAR_ANFITRIAO");
+                Log.i("BD","AntesDOACTIVITY");
                 startActivityForResult(it, BUSCAR_ANFITRIAO);
+                Log.i("BD","DEPOISDAACVITY");
             }
         });
+        Log.i("BD", "DepoisDEChamar");
     }
 
     @Override
