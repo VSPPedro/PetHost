@@ -38,8 +38,27 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".PerfilDono" />
-        <activity android:name=".PerfilAnfitriao"></activity>
+        <activity android:name=".PerfilDono">
+            <intent-filter>
+                <action android:name="NOVO_PERFIL_DONO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PerfilAnfitriao">
+            <intent-filter>
+                <action android:name="PERFIL_ANFITRIAO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BuscarAnfitriao">
+            <intent-filter>
+                <action android:name="NOVO_BUSCAR_ANFITRIAO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

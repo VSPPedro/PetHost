@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 public class PerfilDono extends AppCompatActivity {
     private static final int FOTO = 1;
+    private static final int BUSCAR_ANFITRIAO = 1;
     private TextView textHelloUser;
     private Button bCaptureImage;
     private Button bBuscarAnfitriao;
@@ -24,13 +25,24 @@ public class PerfilDono extends AppCompatActivity {
 
         this.fotoPerfil = (ImageView) findViewById(R.id.imageUsuarioPerfil);
         this.textHelloUser = (TextView) findViewById(R.id.nomeUsuarioPerfil);
+        this.bCaptureImage = (Button) findViewById(R.id.buttoneditarfoto);
+        this.bBuscarAnfitriao = (Button) findViewById(R.id.buttonbuscaranfitriao);
 
         //Botão mudar foto
         this.bCaptureImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(it, PerfilDono.this.FOTO);
+                startActivityForResult(it, FOTO);
+            }
+        });
+
+        //Botão buscar anfitrião
+        this.bBuscarAnfitriao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent("NOVO_BUSCAR_ANFITRIAO");
+                startActivityForResult(it, BUSCAR_ANFITRIAO);
             }
         });
     }
